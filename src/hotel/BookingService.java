@@ -25,10 +25,10 @@ public class BookingService {
     }
 
     //metod för att avboka ett rum baserat på rumsnummer
-    public void cancelBooking(String roomNr) {
+    public void unBookRoom(String roomNr) {
         Room room = findRoom(roomNr);
         if (room != null) {
-            room.cancelBooking();
+            room.unBookRoom();
         }else {
             System.out.println("Room with " + roomNr + " was not found");
         }
