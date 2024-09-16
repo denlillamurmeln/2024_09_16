@@ -69,10 +69,11 @@ public /*abstract*/ class Room {
                 ", capacity=" + capacity +
                 ", isBooked=" + isBooked +
                 '}';*/
+
     public void displayRoomDetails() {
         System.out.println("Room " + roomNr + " with capacity of " + capacity + " guests");
     }
 
 
-    }
+}
 
