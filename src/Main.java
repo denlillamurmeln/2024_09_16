@@ -5,6 +5,8 @@ public class Main {
 
         int newScore = calculateScore(300);
         System.out.println(newScore);
+
+        int noPlayer = calculateScore();
     }
 
     public static int calculateScore(String playername, int score){
@@ -13,7 +15,13 @@ public class Main {
     }
 
     public static int calculateScore(int score){
-        System.out.println("Unknown player score " + score);
-        return score * 1000;
+        //System.out.println("Unknown player score " + score);
+        //return score * 1000;
+        return calculateScore("Anonymus", score);
+    }
+
+    public static int calculateScore() {
+        System.out.println("No player, no score");
+        return 0;
     }
 }
